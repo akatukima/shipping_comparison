@@ -1,0 +1,38 @@
+name: shipping_comparison
+services:
+  nuxt:
+    image: node:20.10
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/project
+      - ./app/node_modules:/project/node_modules
+    tty: true
+    networks:
+      nuxt-app-nw:
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      - DB_ROOT_HOST=%
+      - MYSQL_DATABASE=local
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=userpass
+      - MYSQL_ROOT_PASSWORD=root
+      - TZ=Asia/Tokyo
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db/conf:/etc/mysql/conf.d/:ro
+      - ./shared/data/db/mysql:/var/lib/mysql
+      - ./shared/data/db/log:/var/log/mysql
+    networks:
+      nuxt-app-nw:
+
+networks:
+  nuxt-app-nw:

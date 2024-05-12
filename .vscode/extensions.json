@@ -1,0 +1,24 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "ms-vscode-remote.remote-containers",
+    "mikestead.dotenv",
+    "xabikos.javascriptsnippets",
+    "hollowtree.vue-snippets",
+    "sdras.vue-vscode-snippets",
+    "vuetifyjs.vuetify-vscode",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "github.vscode-pull-request-github",
+    "gencer.html-slim-scss-css-class-completion",
+    "sibiraj-s.vscode-scss-formatter",
+    "mrmlnc.vscode-scss",
+    "mubaidr.vuejs-extension-pack",
+    "cpreston321.nuxt-vscode",
+    "antfu.goto-alias",
+    "ms-vscode-remote.vscode-remote-extensionpack"
+  ]
+}

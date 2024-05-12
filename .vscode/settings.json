@@ -1,0 +1,21 @@
+{
+  "codespaces.accountProvider": "GitHub",
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "always"
+  },
+  "prettier.configPath": "./app/.prettierrc",
+  "prettier.requireConfig": true,
+  "eslint.useESLintClass": true,
+  "eslint.enable": true,
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.debug": false,
+  "eslint.workingDirectories": ["app"],
+  "nuxt-vscode.root": "./app",
+  "nuxtr.vueFiles.style.defaultLanguage": "sass",
+  "nuxtr.defaultPackageManager": "NPM",
+  "nuxtr.vueFiles.firstTag": "script",
+  "nuxtr.monorepoMode.DirectoryName": "app"
+}
